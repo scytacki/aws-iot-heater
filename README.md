@@ -50,7 +50,7 @@ you'll need to get back here and enter the Website URL.
 git clone https://github.com/mongoose-os-apps/aws-iot-heater  # Clone repo
 cd aws-iot-heater
 
-mos flash aws-esp8266                           # Install Mongoose OS
+mos flash esp8266                               # Install Mongoose OS
 DEVICE_ID=$(mos config-get device.id)           # Get device ID
 mos put fs/init.js                              # Copy init.js on the device
 mos config-set mqtt.enable=true                 # Enable MQTT
