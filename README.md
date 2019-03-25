@@ -64,7 +64,7 @@ aws s3 mb s3://my-cf-helpers
 
 # Get the endpoint address for your AWS account, you'll need to provide it as
 # a parameter for your stack:
-AWS_IOT_ENDPOINT=$(aws iot describe-endpoint --output text)
+AWS_IOT_ENDPOINT=$(aws iot describe-endpoint --endpoint-type iot:Data-ATS --output text)
 
 # Now, "package" the template. Packaging includes copying source code of the
 # helper functions from local machine to the s3 bucket we created above,
